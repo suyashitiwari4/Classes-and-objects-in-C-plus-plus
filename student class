@@ -1,0 +1,55 @@
+//SUYASHI TIWARI
+//24070123115
+#include<iostream>
+using namespace std;
+
+    class Student {
+        public:
+        string name;
+        string branch;
+        string subject;
+        string year;
+        float result;
+    };
+int main(){
+    Student s1,s2;
+    s1.name="Suyashi";
+    s1.branch="E&TC";
+    s1.subject="C++";
+    s1.result=8.6;
+    s1.year="2024-2028";
+    s2.name="John";
+    s2.branch="CSE";
+    s2.subject="PPS";
+    s2.result=7.9;
+    s2.year="2024-2028";
+    cout<<"For student 1:"<<endl;
+    cout<<"Name:"<<s1.name<<endl;
+    cout<<"Branch:"<<s1.branch<<endl;
+    cout<<"Subject"<<s1.subject<<endl;
+    cout<<"Result:"<<s1.result<<endl;
+    cout<<"Year:"<<s1.year<<endl;
+    cout<<"For student 2:"<<endl;
+    cout<<"Name:"<<s2.name<<endl;
+    cout<<"Branch:"<<s2.branch<<endl;
+    cout<<"Subject"<<s2.subject<<endl;
+    cout<<"Result:"<<s2.result<<endl;
+    cout<<"Year:"<<s2.year<<endl;
+    return 0;
+}
+/*OUTPUT:
+For student 1:
+Name:Suyashi
+Branch:E&TC
+SubjectC++
+Result:8.6
+Year:2024-2028
+For student 2:
+Name:John
+Branch:CSE
+SubjectPPS
+Result:7.9
+Year:2024-2028
+
+
+=== Code Execution Successful ===*/
