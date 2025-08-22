@@ -1,0 +1,45 @@
+//Suyashi Tiwari
+//24070123115
+#include <iostream>
+using namespace std;
+
+class rec {
+    
+        int length;
+        int width;
+        int area;
+
+    public:
+        void dim() {
+            cout << "Enter length:" << endl;
+            cin >> length;
+            cout << "Enter width:" << endl;
+            cin >> width;
+        }
+
+        void calc_area() {
+            area = length * width;
+        }
+
+        void disp_area() const {
+            cout << "Area: " << area << endl;
+        }
+};
+
+int main() {
+    rec r;
+    r.dim();         // Input dimensions
+    r.calc_area();   // Calculate area
+    r.disp_area();   //Display area
+
+    return 0;
+}
+/*OUTPUT:
+Enter length:
+5
+Enter width:
+3
+Area: 15
+
+
+=== Code Execution Successful === */
