@@ -1,0 +1,56 @@
+//SUYASHI TIWARI
+//24070123115
+#include <iostream>
+using namespace std;
+
+class Cal {
+public:
+    float a, b;
+
+    void num() {
+        cout << "Enter the value of a: ";
+        cin >> a;
+        cout << "Enter the value of b: ";
+        cin >> b;
+    }
+
+    void addition() {
+        cout << "Addition: " << a + b << endl;
+    }
+
+    void subtraction() {
+        cout << "Subtraction: " << a - b << endl;
+    }
+
+    void multiplication() {
+        cout << "Multiplication: " << a * b << endl;
+    }
+
+    void division() {
+        if (b != 0)
+            cout << "Division: " << a / b << endl;
+        else
+            cout << "Error! Division by zero." << endl;
+    }
+};
+
+int main() {
+    Cal c;
+    c.num();
+    c.addition();
+    c.subtraction();
+    c.multiplication();
+    c.division();
+
+    return 0;
+}
+/*OUTPUT:
+Enter the value of a: 36
+Enter the value of b: 6
+Addition: 42
+Subtraction: 30
+Multiplication: 216
+Division: 6
+
+
+=== Code Execution Successful ===*/
