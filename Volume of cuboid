@@ -1,0 +1,42 @@
+//Suyashi Tiwari
+//24070123115
+#include <iostream>
+using namespace std;
+
+class Cuboid {
+    float length;
+    float breadth;
+    float height;
+
+public:
+    
+    void getdim() {
+        cout << "Enter the value of length: ";
+        cin >> length;
+        cout << "Enter the value of breadth: ";
+        cin >> breadth;
+        cout << "Enter the value of height: ";
+        cin >> height;
+    }
+
+    float volume();
+};
+
+float Cuboid::volume() {
+    return length * breadth * height;
+}
+
+int main() {
+    Cuboid c;
+    c.getdim();
+    cout << "Volume of Cuboid: " << c.volume() << endl;
+    return 0;
+}
+/*OUTPUT:
+Enter the value of length: 5.2
+Enter the value of breadth: 4.5
+Enter the value of height: 3.0
+Volume of Cuboid: 70.2
+
+
+=== Code Execution Successful ===
